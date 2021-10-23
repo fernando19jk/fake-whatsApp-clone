@@ -1,0 +1,14 @@
+com/fakewhatsapp/MainApplication.java
+ com.fakewhatsapp.MainApplication
+ com.fakewhatsapp.MainApplication$1
+com/fakewhatsapp/ReactNativeFlipper.java
+ com.fakewhatsapp.ReactNativeFlipper
+ com.fakewhatsapp.ReactNativeFlipper$1
+ com.fakewhatsapp.ReactNativeFlipper$2
+ com.fakewhatsapp.ReactNativeFlipper$2$1
+com/fakewhatsapp/MainActivity.java
+ com.fakewhatsapp.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/fakewhatsapp/BuildConfig.java
+ com.fakewhatsapp.BuildConfig
