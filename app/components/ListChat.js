@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import ActionButton from 'react-native-action-button';
 
 
 export default class ListChat extends Component {
@@ -33,6 +34,7 @@ export default class ListChat extends Component {
         );
     }
 }
+
 
 const styles = StyleSheet.create({
     listItemContainer: {
