@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Image, Text } from "react-native";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
 export default class ListCall extends Component {
 
     render() {
         return (
+            
             <View style = {styles.listItemContainer}>
              <View style = {styles.avatarContainer}>
                 <Image style={styles.avatar}
@@ -19,8 +21,15 @@ export default class ListCall extends Component {
              </View>
              <View style = {styles.chatDetailsContainerWrap}>
               <View style = {styles.msgContainer}>
-               <Text style={styles.msgText}>{this.props.date} {this.props.time}</Text>
+              
+               <Text style={styles.msgText}>
+               <Icon name="call-received" color="#075e54" size={15} />  
+                    {this.props.date} {this.props.time}</Text>
               </View>
+              
+              <View style = {styles.iconContainer}>
+               <Icon name="call" color="#075e54" size={23}  />
+                </View>
             </View>
           </View>   
         </View>
@@ -57,6 +66,10 @@ const styles = StyleSheet.create({
     },
     dateText: {
         fontSize: 12
+    },
+    iconContainer: {
+        
+        alignItems: "flex-end",
     },
     avatar: {
         borderRadius: 30,
