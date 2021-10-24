@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {Component} from "react";
 import {View, Text, FlatList, ActivityIndicator} from "react-native";
 import { FAKE_CALLS } from "../data/data";
+import ListCall from "./ListCall.js";
 
 export default class Call extends Component {
     constructor(props) {
@@ -29,16 +30,22 @@ export default class Call extends Component {
         if(this.state.loaded) {
         return(
             <FlatList
-              data={this.state.callList}
-              renderItem={({item}) => <Text>{item.first_name}</Text>}
-              keyExtractor={item => item.id}
-            />
-        )
-    } else {
-        return(
-            <ActivityIndicator size="large" />
-        )
+                data={this.state.callList}
+                renderItem={({item}) => (
+                <ListCall
+                    first_name={item.first_name}
+                    image={item.image}
+                    date={item.date}
+                    time={item.time}
+                    />
+                )}
+                keyExtractor={item => item.id}
+                />
+            )
+        } else {
+            return(
+                <ActivityIndicator size="large" />
+            )
+        }
     }
-}
-}
-
+    }
