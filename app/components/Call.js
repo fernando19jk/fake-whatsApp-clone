@@ -37,6 +37,7 @@ export default class Call extends Component {
                     image={item.image}
                     date={item.date}
                     time={item.time}
+                    video_call={item.video_call}
                     />
                 )}
                 keyExtractor={item => item.id}

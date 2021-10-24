@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Image, Text } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
-export default class ListCall extends Component {
+export default class ListState extends Component {
 
     render() {
         return (
@@ -23,12 +23,12 @@ export default class ListCall extends Component {
               <View style = {styles.msgContainer}>
               
                <Text style={styles.msgText}>
-               <Icon name="call-received" color="#075e54" size={15} />  
+                
                     {this.props.date} {this.props.time}</Text>
               </View>
               
               <View style = {styles.iconContainer}>
-               <Icon name="call" color="#075e54" size={23}  />
+               
                 
                 </View>
             </View>
