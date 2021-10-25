@@ -6,6 +6,7 @@ import Chats from "./app/components/Chat";
 import States from "./app/components/State";
 import Calls from "./app/components/Call";
 import Button from "./app/components/Button";
+import MyState from "./app/components/MyState";
 
 export default class App extends Component{
   render() {

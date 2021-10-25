@@ -2,7 +2,8 @@ import axios from "axios";
 import React, {Component} from "react";
 import {View, Text, FlatList, ActivityIndicator} from "react-native";
 import { FAKE_STATES } from "../data/data";
-import ListState from "./ListState.js";
+import ListState from "./ListState";
+import MyState from "./MyState";
 
 export default class State extends Component {
     constructor(props) {
@@ -29,18 +30,16 @@ export default class State extends Component {
     render() {
         if(this.state.loaded) {
         return(
-            <FlatList
+            <><MyState></MyState><FlatList
                 data={this.state.stateList}
-                renderItem={({item}) => (
-                <ListState
-                    first_name={item.first_name}
-                    image={item.image}
-                    date={item.date}
-                    time={item.time}
-                    />
+                renderItem={({ item }) => (
+                    <ListState
+                        first_name={item.first_name}
+                        image={item.image}
+                        date={item.date}
+                        time={item.time} />
                 )}
-                keyExtractor={item => item.id}
-                />
+                keyExtractor={item => item.id} /></> 
             )
         } else {
             return(

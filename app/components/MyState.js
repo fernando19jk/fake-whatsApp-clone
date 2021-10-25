@@ -1,48 +1,38 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, Image, Text } from "react-native";
-import Icon from "react-native-vector-icons/MaterialIcons";
-import MyState from "./MyState";
 
-export default class ListState extends Component {
+export default class MyState extends Component {
 
     render() {
+        let image ={uri:'https://slm-assets.secondlife.com/assets/5489200/lightbox/chucky%20resized.jpg?1335722960'};
+
         return (
-            
+            <View>
             <View style = {styles.listItemContainer}>
              <View style = {styles.avatarContainer}>
                 <Image style={styles.avatar}
-                source={{uri:this.props.image}}
+                source= {image}
                 />
              </View>
              <View style = {styles.chatDetailsContainer}>
                <View style = {styles.chatDetailsContainerWrap}>
                 <View style = {styles.nameContainer}>
-                 <Text style = {styles.nameText}>{this.props.first_name}</Text>
+                 <Text style = {styles.nameText}>Mi estado</Text>
+                 <Text style={styles.msgText}>añade una actualización</Text>
                </View>
              </View>
-             <View style = {styles.chatDetailsContainerWrap}>
-              <View style = {styles.msgContainer}>
-              
-               <Text style={styles.msgText}>
-                
-                    {this.props.date} {this.props.time}</Text>
-              </View>
-              
-              <View style = {styles.iconContainer}>
-               
-                
-                </View>
-            </View>
-          </View>   
+          </View>  
+        </View>
+        <View style = {styles.recent}>
+        <Text style={styles.letter}>Recientes</Text>
+        </View>
         </View>
         );
     }
 }
 
-
 const styles = StyleSheet.create({
     listItemContainer: {
-        flex: 1,
         flexDirection: "row",
         padding: 10
     },
@@ -78,6 +68,16 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         width: 60,
         height: 60
+    },
+    recent: {
+        padding: 7,
+        backgroundColor: "#E8E5E4",
+        opacity: 1
+    },
+    letter: {
+        color: "#0E7955",
+        fontWeight: "bold"
+        
     }
 });
 
