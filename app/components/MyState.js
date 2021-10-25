@@ -71,13 +71,12 @@ const styles = StyleSheet.create({
     },
     recent: {
         padding: 7,
-        backgroundColor: "#E8E5E4",
+        backgroundColor: "#EDE9E9",
         opacity: 1
     },
     letter: {
         color: "#0E7955",
         fontWeight: "bold"
-        
     }
 });
 

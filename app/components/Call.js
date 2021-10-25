@@ -38,6 +38,7 @@ export default class Call extends Component {
                     date={item.date}
                     time={item.time}
                     video_call={item.video_call}
+                    missed={item.missed}
                     />
                 )}
                 keyExtractor={item => item.id}
@@ -49,4 +50,4 @@ export default class Call extends Component {
             )
         }
     }
-    }
+}

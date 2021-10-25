@@ -5,6 +5,8 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 export default class ListCall extends Component {
 
     render() {
+        const video_call = this.props.video_call
+        const missed  = this.props.missed
         return (
             
             <View style = {styles.listItemContainer}>
@@ -23,12 +25,13 @@ export default class ListCall extends Component {
               <View style = {styles.msgContainer}>
               
                <Text style={styles.msgText}>
-               <Icon name="call-received" color="#075e54" size={15} />  
+               {missed ? <Icon name="call-missed" color="#C11111" size={15}/> : <Icon name="call-received" color="#075e54" size={15}/>}  
                     {this.props.date} {this.props.time}</Text>
               </View>
               
-              <View style = {styles.iconContainer}>
-               <Icon name="call" color="#075e54" size={23}  />
+              <View style = {styles.iconContainer}> 
+              {video_call ? <Icon name="video-call" color="#075e54" size={23}/> : <Icon name="call" color="#075e54" size={23}/>}
+              
                 
                 </View>
             </View>
