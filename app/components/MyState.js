@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     },
     recent: {
         padding: 7,
-        backgroundColor: "#EDE9E9",
+        backgroundColor: "#F5F5F5",
         opacity: 1
     },
     letter: {

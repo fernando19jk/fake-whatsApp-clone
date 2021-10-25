@@ -26,13 +26,11 @@ export default class ListCall extends Component {
               
                <Text style={styles.msgText}>
                {missed ? <Icon name="call-missed" color="#C11111" size={15}/> : <Icon name="call-received" color="#075e54" size={15}/>}  
-                    {this.props.date} {this.props.time}</Text>
+                {this.props.date} {this.props.time}</Text>
               </View>
               
               <View style = {styles.iconContainer}> 
               {video_call ? <Icon name="video-call" color="#075e54" size={23}/> : <Icon name="call" color="#075e54" size={23}/>}
-              
-                
                 </View>
             </View>
           </View>   
