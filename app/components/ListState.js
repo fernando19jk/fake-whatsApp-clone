@@ -31,7 +31,7 @@ export default class ListState extends Component {
               <View style = {styles.iconContainer}>
                
                 
-                </View>
+              </View>
             </View>
           </View>   
         </View>

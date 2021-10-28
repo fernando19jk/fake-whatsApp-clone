@@ -39,7 +39,7 @@ export default class State extends Component {
                         date={item.date}
                         time={item.time} />
                 )}
-                keyExtractor={item => item.id} /></> 
+                keyExtractor={item => item.id} /></>
             )
         } else {
             return(
