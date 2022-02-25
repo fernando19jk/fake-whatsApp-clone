@@ -6,7 +6,8 @@ import Chats from "./app/components/Chat";
 import States from "./app/components/State";
 import Calls from "./app/components/Call";
 import ActionButton from 'react-native-action-button';
-
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs();//Ignore all log notifications
 export default class App extends Component{
   constructor()
   {
@@ -60,7 +61,6 @@ export default class App extends Component{
      <ActionButton buttonColor="#075e54"
        icon={<Icon color="white" size={23} name={this.state.index === 1 ? 'photo-camera' : this.state.index === 2 ? 'call' : 'chat'}></Icon>}>
      </ActionButton>
-    {secondaryButton}
    </View>
    )
  }

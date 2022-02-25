@@ -1,14 +1,14 @@
-#Sat Oct 23 17:58:26 CEST 2021
+#Fri Feb 25 12:41:15 CET 2022
 path.4=14/classes.dex
 path.3=11/classes.dex
 path.2=0/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=/home/aitor/Documentos/Trabajos/React/fakewhatsappreact/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.3=/home/aitor/Documentos/Trabajos/React/fakewhatsappreact/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.2=/home/aitor/Documentos/Trabajos/React/fakewhatsappreact/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.1=/home/aitor/Documentos/Trabajos/React/fakewhatsappreact/android/app/build/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
-base.0=/home/aitor/Documentos/Trabajos/React/fakewhatsappreact/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.4=/home/fernando/Documentos/fake-whatsapp-react/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.3=/home/fernando/Documentos/fake-whatsapp-react/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.2=/home/fernando/Documentos/fake-whatsapp-react/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/home/fernando/Documentos/fake-whatsapp-react/android/app/build/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
+base.0=/home/fernando/Documentos/fake-whatsapp-react/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
